@@ -8,25 +8,47 @@
     <title>Sign-up Page</title>
 </head>
 <body>
-    <form action="get">
-        <div>
-            <label for="first_name">First Name</label>
-            <input type="text" name="first_name">
-            <label for="last_name">Last Name</label>
-            <input type="text" name="last_name">
+    <div class="image-container">
+        <img class="side-image" src="images/abstract-whiteandblack.jpg" alt="">
+    </div>
+    <div class="main-container">
+        <div class="info">
+            <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi! </p>
+            <p style="margin-top: -1.8rem;">Sign up now to get started.</p> 
+            <p>You know you want to.</p>
         </div>
-        <div>
-            <label for="email">E-mail</label>
-            <input type="email" name="email">
-            <label for="phone-number">Phone Number</label>
-            <input type="tel" name="phone-number">
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="password" name="password">
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" name="confirm-password">
-        </div>
-    </form>
+        <form action="get" class="form-main-container">
+            <div class="form-row-container">
+                <div class="input-node">
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name">
+                </div>
+                <div class="input-node">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name">
+                </div>
+            </div>
+            <div class="form-row-container">
+                <div class="input-node">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="input-node">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" name="phone-number">
+                </div>
+            </div>
+            <div class="form-row-container"> 
+                <div class="input-node">
+                    <label for="password">Password</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="input-node">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm-password">
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
