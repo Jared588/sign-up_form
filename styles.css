@@ -18,8 +18,6 @@ body {
     display: flex;
     flex-direction: row;
     flex: auto;
-    justify-content: stretch;
-    align-items: center;
     background: linear-gradient(
         to right,
         rgb(20, 20, 20),
@@ -29,9 +27,9 @@ body {
 
 .main-container {
     display: flex;
-    flex-direction: column;
     flex: auto;
-    gap: 10rem;
+    flex-direction: column;
+    justify-content: start;
 }
 
 .image-container {
@@ -87,6 +85,18 @@ body {
     padding: 0.2rem 0.5rem;   
 }
 
+.button-container {
+    margin-top: 5rem;
+    margin-left: 12rem;
+}
+
 .submit-button {
-    
+    color: var(--main-color);
+    background-color: rgb(50, 167, 50);
+    font-family: var(--main-font);
+    font-size: 16px;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 1rem;
+    width: 15rem;
 }
