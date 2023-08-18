@@ -85,16 +85,12 @@ body {
     padding: 0.2rem 0.5rem;   
 }
 
-.button-container {
-    margin-top: 5rem;
-    margin-left: 12rem;
-}
-
 .submit-button {
     color: var(--main-color);
     background-color: rgb(50, 167, 50);
     font-family: var(--main-font);
     font-size: 16px;
+    margin-top: 3rem;
     padding: 0.8rem;
     border: none;
     border-radius: 1rem;
