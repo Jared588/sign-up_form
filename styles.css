@@ -119,3 +119,11 @@ body {
     margin-bottom: 0%;
     color: rgb(231, 46, 46);
 }
+
+.image-credit {
+    font-family: var(--main-font);
+    font-size: 14px;
+    position: absolute;
+    bottom: 1rem;
+    color: var(--secondary-color);
+}
