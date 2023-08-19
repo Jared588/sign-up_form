@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📜</text></svg>">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js"></script>
     <title>Sign-up Page</title>
 </head>
 <body>
@@ -15,41 +16,42 @@
         <div class="info">
             <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi! </p>
             <p style="margin-top: -1.8rem;">Sign up now to get started.</p> 
-            <p>You know you want to.</p>
+            <p>You <em>know</em> you want to.</p>
         </div>
         <form action="get" class="form-main-container">
             <div class="form-row-container">
                 <div class="input-node">
                     <label for="first_name">First Name</label>
-                    <input type="text" name="first_name">
+                    <input type="text" name="first_name" required>
                 </div>
                 <div class="input-node">
                     <label for="last_name">Last Name</label>
-                    <input type="text" name="last_name">
+                    <input type="text" name="last_name" required>
                 </div>
             </div>
             <div class="form-row-container">
                 <div class="input-node">
                     <label for="email">E-mail</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" required>
                 </div>
                 <div class="input-node">
                     <label for="phone-number">Phone Number</label>
-                    <input type="tel" name="phone-number">
+                    <input type="tel" name="phone-number" required>
                 </div>
             </div>
             <div class="form-row-container"> 
                 <div class="input-node">
                     <label for="password">Password</label>
-                    <input type="password" name="password">
+                    <input type="password" name="password" id="password" minlength="8" required>
+                    <p class="password-validation" id="password-validation"></p>
                 </div>
                 <div class="input-node">
                     <label for="confirm-password">Confirm Password</label>
-                    <input type="password" name="confirm-password">
+                    <input type="password" name="confirm-password" id="confirmed-password" minlength="8" required>
                 </div>
             </div>
             <div class="form-row-container">
-                <button type="submit" class="submit-button">Create Account</button>
+                <button type="submit" class="submit-button" id="submit">Create Account</button>
             </div>
             <div class="form-row-container">
                 <p>Already have an Account? Click <a href="#" style="color: rgb(50, 167, 50);">here</a>.</p>

@@ -110,6 +110,12 @@ body {
     transform: scale(1.02);
 }
 
-input:invalid {
-    border-color: red;
+.invalid {
+    border-color: red !important;
+}
+
+.password-validation {
+    font-size: 12px;
+    margin-bottom: 0%;
+    color: rgb(231, 46, 46);
 }
