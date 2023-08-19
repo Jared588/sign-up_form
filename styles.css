@@ -85,6 +85,15 @@ body {
     padding: 0.2rem 0.5rem;   
 }
 
+.input-node > input:hover {
+    border-color: aliceblue;
+}
+
+.input-node > input:-webkit-autofill {
+  -webkit-text-fill-color: var(--main-color);
+  -webkit-box-shadow: 0 0 0px 40rem rgb(49, 49, 49) inset;
+}
+
 .submit-button {
     color: var(--main-color);
     background-color: rgb(50, 167, 50);
@@ -95,4 +104,12 @@ body {
     border: none;
     border-radius: 1rem;
     width: 15rem;
+}
+
+.submit-button:hover {
+    transform: scale(1.02);
+}
+
+input:invalid {
+    border-color: red;
 }
